@@ -5,6 +5,7 @@ context('electronic menu', () => {
       //  cy.exec('npm run db:reset && npm run db:seed')
       cy.viewport('iphone-8')
         menuPage.goToElectronicMenu('/electronics');
+        menuPage
         
     })
     it('nav to the electronic menu',() => {
