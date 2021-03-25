@@ -5,16 +5,18 @@ const navigateToSite = () => {
     cy.visit('https://demo.nopcommerce.com/')
 }
 const verifyTitleAndMessage = () => {
-    cy.get('email').click()
+    cy.title().should('eq', 'nopCommerce demo store')
+    searchBox()
 }
-
-const goToPage = () => {
-    cy.visit('http://automationpractice.com/')
+const searchBox = () => {
+    return cy
+    .get('#small-searchterms').should('be.visible')
 }
 
 const addPage = {
     navigateToSite:navigateToSite,
-    verifyTitleAndMessage:verifyTitleAndMessage
+    verifyTitleAndMessage:verifyTitleAndMessage,
+    searchBox:searchBox
 }
 
 export default {
