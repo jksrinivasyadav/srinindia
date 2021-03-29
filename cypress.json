@@ -1,3 +1,11 @@
 {
-    "baseUrl": "https://www.superdrug.com/"
+    "baseUrl": "https://www.superdrug.com/",
+    "reporter": "mochawesome",
+  "reporterOptions": {
+      "reportDir": "cypress/reports/mochawesome-report",
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyyyy_HHMMss"
+   }
 }

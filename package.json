@@ -5,13 +5,20 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "cypress run" : "node_modules\\.bin\\cypress run --config pageLoadTimeout-100000"
-  
+    "cypress run": "node_modules\\.bin\\cypress run --config pageLoadTimeout-100000",
+      "cleanup": "rm -fr cypress/reports/mochawesome-html-report",
+      "merge_reports": "mochawesome-merge cypress/reports/mochawesome-report/*.json > output.json",
+      "mochawesome_report": "marge --reportDir cypress/reports/mochawesome-html-report -t Cypress_Test_Report -p Cypress_HMTL_Report -f Cypress_HMTL_Report --timestamp mmddyyyy_HHMMss --charts true output.json",
+      "cy:report": "npm run cleanup && cypress run && npm run merge_reports && npm run mochawesome_report"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^5.6.0",
-    "cypress-xpath": "^1.6.1"
+    "cypress-xpath": "^1.6.1",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
