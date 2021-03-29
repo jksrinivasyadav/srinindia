@@ -1,3 +1,4 @@
+/*
 /// <reference types = "Cypress"/>
 import {jewPage,constants} from "../../pages/jewelPage"
 
@@ -25,3 +26,4 @@ describe("verify user can access jewel menu",() =>{
     })
 
 })
+*/

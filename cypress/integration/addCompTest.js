@@ -1,7 +1,7 @@
 /// <reference types = "Cypress"/>
 import {addPage} from "../pages/addCompPage"
 
-context("verify user can access site", () => {
+context.only("verify user can access site", () => {
     beforeEach(() => {
         addPage.navigateToSite()
         //cy.injectAxe()

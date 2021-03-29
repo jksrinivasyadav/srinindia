@@ -1,3 +1,4 @@
+/*
 /// <reference types ='Cypress'/>
 import {menuPage,constants} from "../pages/electronicPage.js"
 context('electronic menu', () => {
@@ -33,3 +34,4 @@ context('electronic menu', () => {
         cy.clearCookies()
     })
 })
+*/

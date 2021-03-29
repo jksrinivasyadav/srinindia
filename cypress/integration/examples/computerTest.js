@@ -1,3 +1,4 @@
+/*
 /// <reference types = 'Cypress'/>
 import {compPage,constants} from "../../pages/computerPage"
 
@@ -18,3 +19,4 @@ context('verify user can access comp menu', ()=> {
         compPage.checkQuantity()
     })
 })
+*/
