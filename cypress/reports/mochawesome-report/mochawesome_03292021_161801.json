@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-29T15:17:50.613Z",
+    "end": "2021-03-29T15:18:01.915Z",
+    "duration": 11302,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09d0d74f-0a35-46a5-bbd3-5f76edb0b1fa",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\paraBankTest.js",
+      "file": "cypress\\integration\\examples\\paraBankTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5bd17590-510c-49f9-b4f6-28a1bb53169e",
+          "title": "Parabank site access",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check title of the page",
+              "fullTitle": "Parabank site access check title of the page",
+              "timedOut": null,
+              "duration": 8077,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_paraBankPage.bank.verifyTitle('ParaBank | Welcome | Online Banking');",
+              "err": {},
+              "uuid": "f26c72db-774f-4fa4-8f5f-c1f4404b7326",
+              "parentUUID": "5bd17590-510c-49f9-b4f6-28a1bb53169e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f26c72db-774f-4fa4-8f5f-c1f4404b7326"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8077,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

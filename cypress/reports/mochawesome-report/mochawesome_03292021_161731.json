@@ -1,0 +1,220 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-29T15:16:20.254Z",
+    "end": "2021-03-29T15:17:31.359Z",
+    "duration": 71105,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "48511932-d195-4892-981f-495c99ace5e6",
+      "title": "",
+      "fullFile": "cypress\\integration\\department.js",
+      "file": "cypress\\integration\\department.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+          "title": "verify user can access depts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify user can access tshirtsMenu and click on the link",
+              "fullTitle": "verify user can access depts verify user can access tshirtsMenu and click on the link",
+              "timedOut": null,
+              "duration": 5684,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//deptPages.tshirtsMenu()\n_departmentPage.deptPages.selectSizes('small', 'Price: Highest first');\n_departmentPage.deptPages.sortBy('Price: Highest first');",
+              "err": {},
+              "uuid": "c167ee07-62ca-4657-b122-270192c030b6",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user can access special buy link",
+              "fullTitle": "verify user can access depts verify user can access special buy link",
+              "timedOut": null,
+              "duration": 8740,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.specialDress('Price drop');\n_departmentPage.deptPages.specialDiscount('-20%');\n_departmentPage.deptPages.addToWishlistAndCompare('wishList');",
+              "err": {},
+              "uuid": "1ff272f0-c48c-4ff5-b4d9-905181b8a3c2",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user can compare products",
+              "fullTitle": "verify user can access depts verify user can compare products",
+              "timedOut": null,
+              "duration": 16350,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.comparing('compare', '10');\n_departmentPage.deptPages.verifyMess('Product successfully added to your shopping cart', 'There are 10 items in your cart.');\n_departmentPage.deptPages.proceedCheckout(); //deptPages.verifyQuantity('10')\n\n_departmentPage.deptPages.loginBttn().should('be.visible');",
+              "err": {},
+              "uuid": "371e3790-13a9-431a-bfed-723da8219f0f",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user can search for products and search returns correct results",
+              "fullTitle": "verify user can access depts verify user can search for products and search returns correct results",
+              "timedOut": null,
+              "duration": 13938,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.topSearch();\n_departmentPage.deptPages.clickImage();\n_departmentPage.deptPages.shareProductOnExternalSite();",
+              "err": {},
+              "uuid": "caff5d79-b56c-4c12-aec7-c80c08f0b1d4",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify user can click on contact link",
+              "fullTitle": "verify user can access depts Verify user can click on contact link",
+              "timedOut": null,
+              "duration": 7485,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.contactDetails().should('have.text', 'Contact us');\n_departmentPage.deptPages.enterCustomerDetails('selenium1986@gmail.com');\n_departmentPage.deptPages.verifyBannerMess().should('have.text', 'Your message has been successfully sent to our team.');",
+              "err": {},
+              "uuid": "6debe162-cee3-463e-a089-1b910433ad04",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user can signin or register to access system",
+              "fullTitle": "verify user can access depts verify user can signin or register to access system",
+              "timedOut": null,
+              "duration": 7094,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.accountLogin();\n_departmentPage.deptPages.enterEmailAndPassword('selenium1986@gmail.com', 'Test123'); //register is pending",
+              "err": {},
+              "uuid": "049ae68b-bf21-407e-b2ac-6d7f2002d05e",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify user can access saving link",
+              "fullTitle": "verify user can access depts verify user can access saving link",
+              "timedOut": null,
+              "duration": 6866,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_departmentPage.deptPages.savingLink();",
+              "err": {},
+              "uuid": "0e417abc-037c-41b0-81e5-a40ba2239f99",
+              "parentUUID": "46fc5ac3-2a46-46d1-9201-f51d051bdb01",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c167ee07-62ca-4657-b122-270192c030b6",
+            "1ff272f0-c48c-4ff5-b4d9-905181b8a3c2",
+            "371e3790-13a9-431a-bfed-723da8219f0f",
+            "caff5d79-b56c-4c12-aec7-c80c08f0b1d4",
+            "6debe162-cee3-463e-a089-1b910433ad04",
+            "049ae68b-bf21-407e-b2ac-6d7f2002d05e",
+            "0e417abc-037c-41b0-81e5-a40ba2239f99"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 66157,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

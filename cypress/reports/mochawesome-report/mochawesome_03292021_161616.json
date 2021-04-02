@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-29T15:16:11.050Z",
+    "end": "2021-03-29T15:16:16.218Z",
+    "duration": 5168,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b087f906-e78e-4101-b874-af58c17ab0c3",
+      "title": "",
+      "fullFile": "cypress\\integration\\addCompTest.js",
+      "file": "cypress\\integration\\addCompTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "aaec571d-db28-4bba-82e9-cf664cc3020a",
+          "title": "verify user can access site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify user can navigate to the site",
+              "fullTitle": "verify user can access site verify user can navigate to the site",
+              "timedOut": null,
+              "duration": 2310,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// addPage.navigateToSite()\n_addCompPage.addPage.verifyTitleAndMessage();",
+              "err": {},
+              "uuid": "cd106354-e489-49fe-bcbb-d8b30f424e44",
+              "parentUUID": "aaec571d-db28-4bba-82e9-cf664cc3020a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cd106354-e489-49fe-bcbb-d8b30f424e44"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2310,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

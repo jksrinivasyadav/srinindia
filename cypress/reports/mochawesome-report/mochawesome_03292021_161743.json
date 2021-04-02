@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-29T15:17:42.864Z",
+    "end": "2021-03-29T15:17:43.331Z",
+    "duration": 467,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c0201bde-e4b3-4124-8280-1abbe4182448",
+      "title": "",
+      "fullFile": "cypress\\integration\\examples\\apiTesting.js",
+      "file": "cypress\\integration\\examples\\apiTesting.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "120d6db8-7bd9-4103-95a8-99cb1b8e9ad8",
+          "title": "Service testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "7a15dfdb-cc14-4e5a-bdd7-d1e70b3ebd5d",
+              "title": "Docket post test",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should create a todo post",
+                  "fullTitle": "Service testing Docket post test should create a todo post",
+                  "timedOut": null,
+                  "duration": 302,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.request({\n  method: 'POST',\n  url: \"https://docket-test.herokuapp.com/api/Todo/\",\n  headers: {\n    token: \"8d11bde6-4db7-4bab-9abf-0894e734ddc0\"\n  },\n  body: {\n    body: \"Cat Walk\"\n  }\n}).its('status').should('be.ok');",
+                  "err": {},
+                  "uuid": "c9ff167f-4972-4ff2-a58f-28a823424ed6",
+                  "parentUUID": "7a15dfdb-cc14-4e5a-bdd7-d1e70b3ebd5d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "should modify existing todo item",
+                  "fullTitle": "Service testing Docket post test should modify existing todo item",
+                  "timedOut": null,
+                  "duration": 70,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.request({\n  method: 'GET',\n  url: \"https://docket-test.herokuapp.com/api/Todo/\",\n  headers: {\n    token: \"8d11bde6-4db7-4bab-9abf-0894e734ddc0\"\n  },\n  body: {\n    username: \"Selenium1986\",\n    \"Email Address\": \"selenium1986@gmail.com\",\n    password: \"Selenium\"\n  }\n}).its('status').should('be.ok');",
+                  "err": {},
+                  "uuid": "6130d73c-cb7f-4d41-b0ae-d0cfe37741a7",
+                  "parentUUID": "7a15dfdb-cc14-4e5a-bdd7-d1e70b3ebd5d",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Should delete existng todo item",
+                  "fullTitle": "Service testing Docket post test Should delete existng todo item",
+                  "timedOut": null,
+                  "duration": 63,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.request({\n  method: 'DELETE',\n  url: \"https://docket-test.herokuapp.com/api/Todo/2\",\n  headers: {\n    token: \"8d11bde6-4db7-4bab-9abf-0894e734ddc0\"\n  }\n}).its('status').should('be.ok');",
+                  "err": {},
+                  "uuid": "bf268c48-351f-4752-a861-74d4117bafec",
+                  "parentUUID": "7a15dfdb-cc14-4e5a-bdd7-d1e70b3ebd5d",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c9ff167f-4972-4ff2-a58f-28a823424ed6",
+                "6130d73c-cb7f-4d41-b0ae-d0cfe37741a7",
+                "bf268c48-351f-4752-a861-74d4117bafec"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 435,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
